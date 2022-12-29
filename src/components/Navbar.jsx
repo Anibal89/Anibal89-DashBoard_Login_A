@@ -14,7 +14,6 @@ const Navbar = () => {
     }
   }
 
-
   return (
     <nav
       className="navbar is-light"
@@ -49,6 +48,7 @@ const Navbar = () => {
         <div id="navbarBasicExample" className="navbar-menu">
           <div href="/" className="navbar-start">
             <a className="navbar-item">Home</a>
+            <a className="navbar-item">Menu</a>
           </div>
         </div>
 

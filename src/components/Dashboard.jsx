@@ -70,7 +70,7 @@ const Dashboard = () => {
         <button onClick={getUsers} className="button is-info">
           Get Users
         </button>
-        <table className="table is-striped is-fullwidth">
+        <table className="table is-hoverable is-fullwidth">
           <thead>
             <tr>
               <th>Nombre</th>
