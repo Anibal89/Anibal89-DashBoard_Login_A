@@ -24,13 +24,11 @@ const Login = () => {
           } else if (res.data.rol === "user") {
             navigate("/dashboard2");
           }
-          s;
+          ;
         });
     } catch (error) {
       if (error.response) {
         setMsg(error.response.data.message);
-        
-        
       }
     }
   };
@@ -90,7 +88,7 @@ const Login = () => {
                   {/* <button type="button" className="button is-danger is-fullwidth" onClick={ () => toast('Unas Galleticas :v')}>Precioname</button> */}
                   <Toaster
                     position="bottom-right"
-                    reverseOrder={false}
+                    reverseOrder={true}
                   />
                 </div>
               </form>

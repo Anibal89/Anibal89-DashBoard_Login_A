@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 import { useNavigate } from "react-router-dom";
@@ -65,7 +66,7 @@ const Dashboard = () => {
   return (
     <Fragment>
       <Navbar />
-      <div className="container mt-5">
+      <div className="container mt-5" style={{height:'64vh'}}>
         <h1>Bienvenido Usuario: {name} administrador</h1>
         <button onClick={getUsers} className="button is-info">
           Get Users
@@ -91,6 +92,7 @@ const Dashboard = () => {
           </tbody>
         </table>
       </div>
+      <Footer />
     </Fragment>
   );
 };
